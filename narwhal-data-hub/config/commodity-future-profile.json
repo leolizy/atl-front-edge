@@ -1,0 +1,31 @@
+{
+  "profile_name": "commodity-future-v1",
+  "asset_class": "commodity_future",
+  "cdm_version": "5.0.0",
+  "required_fields": [
+    {
+      "cdm_path": "instrument.identifiers[]",
+      "source": "isin",
+      "scheme": "ISIN"
+    },
+    { "cdm_path": "instrument.name", "source": "instrument_name" },
+    { "cdm_path": "instrument.currency", "source": "currency" },
+    { "cdm_path": "instrument.type", "value": "CommodityFuture" },
+
+    { "cdm_path": "instrument.listing.mic", "source": "mic" },
+    { "cdm_path": "instrument.listing.venue_symbol", "source": "venue_symbol" },
+
+    {
+      "cdm_path": "instrument.attributes.contract_size",
+      "source": "contract_size"
+    },
+    {
+      "cdm_path": "instrument.attributes.delivery_months",
+      "source": "delivery_months"
+    },
+    {
+      "cdm_path": "instrument.attributes.tick_value",
+      "source": "tick_value"
+    }
+  ]
+}

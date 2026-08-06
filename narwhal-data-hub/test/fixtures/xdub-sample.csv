@@ -1,0 +1,6 @@
+symbol,name,isin,currency,mic,asset_class,coupon_rate,maturity_date,issue_date,face_value,bond_type
+IE0001,Irish Government Bond 5.40% Mar 2031,IE00B4S3JD47,EUR,XDUB,bond,5.40,2031-03-13,2010-03-18,1000,government
+IE0002,Irish Government Bond 2.00% Feb 2037,IE00BV8C9418,EUR,XDUB,bond,2.00,2037-02-18,2015-02-13,1000,government
+CRH01,CRH PLC 3.125% Apr 2030,XS2154321001,EUR,XDUB,bond,3.125,2030-04-15,2020-10-20,100000,corporate
+EIB01,EIB Sustainability Bond 1.50% Jan 2032,XS1954321500,EUR,XDUB,bond,1.50,2032-01-28,2019-01-28,100000,agency
+IE00TB,Irish Treasury Bill 0% Jun 2027,IE00B4TV0C68,EUR,XDUB,bill,0,2027-06-15,2026-06-15,100000,bill

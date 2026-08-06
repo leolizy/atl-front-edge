@@ -1,0 +1,6 @@
+symbol,name,isin,currency,mic,asset_class
+AAPL,Apple Inc.,US0378331005,USD,XNYS,stock
+MSFT,Microsoft Corporation,US5949181045,USD,XNYS,stock
+JPM,JPMorgan Chase & Co.,US46625H1005,USD,XNYS,stock
+XOM,Exxon Mobil Corporation,US30231G1022,USD,XNYS,stock
+WMT,Walmart Inc.,US9311421039,USD,XNYS,stock

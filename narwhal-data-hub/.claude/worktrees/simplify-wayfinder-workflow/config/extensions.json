@@ -1,0 +1,95 @@
+{
+  "extensions_version": "1.0.0",
+  "fields": [
+    {
+      "name": "mic",
+      "type": "string",
+      "description": "Market Identifier Code (ISO 10383). A four-letter code that identifies a stock exchange, trading venue, or other market operator. Extended from CDM to provide listing-level venue identification.",
+      "applicable_asset_classes": ["stock", "commodity", "future"]
+    },
+    {
+      "name": "board_lot",
+      "type": "integer",
+      "description": "Board lot (round lot) size — the minimum number of shares that can be traded in a single order on a given venue. Varies by exchange and instrument price tier.",
+      "applicable_asset_classes": ["stock"]
+    },
+    {
+      "name": "tick_size",
+      "type": "number",
+      "description": "The minimum price increment for an instrument on its listing venue. Tick sizes are set by exchange regulation and may vary by price tier or liquidity band.",
+      "applicable_asset_classes": ["stock", "commodity", "future"]
+    },
+    {
+      "name": "trading_hours",
+      "type": "string",
+      "description": "The scheduled trading session times for a venue, typically expressed as a human-readable time range (e.g. '09:30-16:00 EST') or as structured session data.",
+      "applicable_asset_classes": ["stock", "commodity", "future"]
+    },
+    {
+      "name": "isin",
+      "type": "string",
+      "description": "International Securities Identification Number (ISO 6166). A 12-character alphanumeric code that uniquely identifies a specific security globally.",
+      "applicable_asset_classes": ["stock", "bond", "fund"]
+    },
+    {
+      "name": "venue_symbol",
+      "type": "string",
+      "description": "The ticker or symbol assigned to an instrument by its listing venue (e.g. AAPL on NASDAQ). Used as the primary trading key alongside the MIC.",
+      "applicable_asset_classes": ["stock", "commodity", "future"]
+    },
+    {
+      "name": "instrument_name",
+      "type": "string",
+      "description": "The full, human-readable name of the financial instrument (e.g. 'Apple Inc. Common Stock'). Distinct from the venue symbol (ticker).",
+      "applicable_asset_classes": [
+        "stock",
+        "commodity",
+        "future",
+        "bond",
+        "fund"
+      ]
+    },
+    {
+      "name": "currency",
+      "type": "string",
+      "description": "ISO 4217 currency code for the instrument's trading currency (not to be confused with the CDM Currency type, which is a full entity).",
+      "applicable_asset_classes": [
+        "stock",
+        "commodity",
+        "future",
+        "bond",
+        "fund"
+      ]
+    },
+    {
+      "name": "asset_class",
+      "type": "string",
+      "description": "The broad category of financial instrument (e.g. 'stock', 'commodity_future'). Used in the pool for routing and filtering before CDM assembly.",
+      "applicable_asset_classes": []
+    },
+    {
+      "name": "contract_size",
+      "type": "number",
+      "description": "The deliverable quantity per contract for a commodity or futures instrument (e.g. 5000 bushels for corn futures, 1000 barrels for crude oil).",
+      "applicable_asset_classes": ["commodity", "future"]
+    },
+    {
+      "name": "delivery_months",
+      "type": "string",
+      "description": "The contract delivery months for a commodity or futures instrument, typically expressed as ISO month codes (e.g. 'H,K,N,U,Z' for Mar,May,Jul,Sep,Dec).",
+      "applicable_asset_classes": ["commodity", "future"]
+    },
+    {
+      "name": "tick_value",
+      "type": "number",
+      "description": "The monetary value of one tick (minimum price increment) per contract. Used to compute P&L from price changes for futures and commodity contracts.",
+      "applicable_asset_classes": ["commodity", "future"]
+    },
+    {
+      "name": "settlement_method",
+      "type": "string",
+      "description": "How the contract settles at expiry: 'physical' for delivery of the underlying commodity, 'cash' for cash settlement based on a reference price.",
+      "applicable_asset_classes": ["commodity", "future"]
+    }
+  ]
+}

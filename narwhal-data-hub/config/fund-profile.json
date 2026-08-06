@@ -1,0 +1,36 @@
+{
+  "profile_name": "fund-v1",
+  "asset_class": "fund",
+  "cdm_version": "5.0.0",
+  "required_fields": [
+    {
+      "cdm_path": "instrument.identifiers[]",
+      "source": "isin",
+      "scheme": "ISIN"
+    },
+
+    { "cdm_path": "instrument.name", "source": "instrument_name" },
+    { "cdm_path": "instrument.currency", "source": "currency" },
+    { "cdm_path": "instrument.type", "value": "Fund" },
+
+    { "cdm_path": "instrument.listing.mic", "source": "mic" },
+    { "cdm_path": "instrument.listing.venue_symbol", "source": "venue_symbol" },
+
+    {
+      "cdm_path": "instrument.attributes.fund_type",
+      "source": "fund_type"
+    },
+    {
+      "cdm_path": "instrument.attributes.expense_ratio",
+      "source": "expense_ratio"
+    },
+    {
+      "cdm_path": "instrument.attributes.underlying_index",
+      "source": "underlying_index"
+    },
+    {
+      "cdm_path": "instrument.attributes.management_style",
+      "source": "management_style"
+    }
+  ]
+}

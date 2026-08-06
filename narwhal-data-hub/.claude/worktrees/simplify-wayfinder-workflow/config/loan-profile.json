@@ -1,0 +1,16 @@
+{
+  "profile_name": "loan-v1",
+  "asset_class": "loan",
+  "cdm_version": "5.0.0",
+  "required_fields": [
+    { "cdm_path": "product.type", "value": "Loan" },
+    { "cdm_path": "product.name", "source": "instrument_name" },
+    { "cdm_path": "product.currency", "source": "currency" },
+    { "cdm_path": "product.loan.notionalAmount", "source": "notional_amount" },
+    { "cdm_path": "product.loan.notionalCurrency", "source": "currency" },
+    { "cdm_path": "product.loan.maturityDate", "source": "maturity_date" },
+    { "cdm_path": "product.loan.interestRate", "source": "interest_rate" },
+    { "cdm_path": "product.loan.borrowerType", "source": "borrower_type" },
+    { "cdm_path": "product.loan.facilityType", "source": "facility_type" }
+  ]
+}

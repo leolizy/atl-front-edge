@@ -1,0 +1,43 @@
+{
+  "profile_name": "listed-derivative-v1",
+  "asset_class": "listed_derivative",
+  "cdm_version": "5.0.0",
+  "required_fields": [
+    {
+      "cdm_path": "instrument.identifiers[]",
+      "source": "isin",
+      "scheme": "ISIN"
+    },
+    { "cdm_path": "instrument.name", "source": "instrument_name" },
+    { "cdm_path": "instrument.currency", "source": "currency" },
+    { "cdm_path": "instrument.type", "value": "ListedDerivative" },
+
+    { "cdm_path": "instrument.listing.mic", "source": "mic" },
+    { "cdm_path": "instrument.listing.venue_symbol", "source": "venue_symbol" },
+
+    {
+      "cdm_path": "instrument.attributes.strike_price",
+      "source": "strike_price"
+    },
+    {
+      "cdm_path": "instrument.attributes.expiration_date",
+      "source": "expiration_date"
+    },
+    {
+      "cdm_path": "instrument.attributes.put_call",
+      "source": "put_call"
+    },
+    {
+      "cdm_path": "instrument.attributes.underlier_isin",
+      "source": "underlier_isin"
+    },
+    {
+      "cdm_path": "instrument.attributes.option_style",
+      "source": "option_style"
+    },
+    {
+      "cdm_path": "instrument.attributes.contract_multiplier",
+      "source": "contract_multiplier"
+    }
+  ]
+}

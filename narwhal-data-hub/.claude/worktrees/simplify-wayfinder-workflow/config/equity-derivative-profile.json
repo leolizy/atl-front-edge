@@ -1,0 +1,51 @@
+{
+  "profile_name": "equity-derivative-v1",
+  "asset_class": "equity_derivative",
+  "cdm_version": "5.0.0",
+  "required_fields": [
+    {
+      "cdm_path": "product.instrument.identifiers[]",
+      "source": "isin",
+      "scheme": "ISIN"
+    },
+    { "cdm_path": "product.instrument.name", "source": "instrument_name" },
+    { "cdm_path": "product.instrument.currency", "source": "currency" },
+    { "cdm_path": "product.instrument.type", "value": "EquitySwap" },
+    { "cdm_path": "product.instrument.mic", "source": "mic" },
+    { "cdm_path": "product.instrument.venue_symbol", "source": "venue_symbol" },
+    {
+      "cdm_path": "product.instrument.economicTerms.underlierIsin",
+      "source": "underlier_isin"
+    },
+    {
+      "cdm_path": "product.instrument.economicTerms.underlierName",
+      "source": "underlier_name"
+    },
+    {
+      "cdm_path": "product.instrument.economicTerms.notionalSchedule.notionalAmount",
+      "source": "notional_amount",
+      "type": "number"
+    },
+    {
+      "cdm_path": "product.instrument.economicTerms.notionalSchedule.notionalCurrency",
+      "source": "notional_currency"
+    },
+    {
+      "cdm_path": "product.instrument.economicTerms.strikePrice",
+      "source": "strike_price",
+      "type": "number"
+    },
+    {
+      "cdm_path": "product.instrument.economicTerms.expirationDate",
+      "source": "expiry_date"
+    },
+    {
+      "cdm_path": "product.instrument.economicTerms.returnType",
+      "source": "return_type"
+    },
+    {
+      "cdm_path": "product.instrument.economicTerms.paymentFrequency",
+      "source": "payment_frequency"
+    }
+  ]
+}

@@ -1,0 +1,6 @@
+symbol,name,isin,currency,mic,asset_class,fund_type,expense_ratio,underlying_index,management_style
+SPY,SPDR S&P 500 ETF Trust,US78462F1030,USD,XNYS,fund,etf,0.0945,S&P 500 Index,passive
+QQQ,Invesco QQQ Trust,US46090E1038,USD,XNYS,fund,etf,0.20,Nasdaq-100 Index,passive
+IWM,iShares Russell 2000 ETF,US4642876555,USD,XNYS,fund,etf,0.19,Russell 2000 Index,passive
+FKIDX,Fidelity International Discovery Fund,US3163892047,USD,XNYS,fund,mutual_fund,0.99,,active
+CEF01,Adams Diversified Equity Fund,US0062121043,USD,XNYS,fund,closed_end,0.59,,active

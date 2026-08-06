@@ -1,0 +1,6 @@
+symbol,name,isin,currency,mic,asset_class,contract_size,delivery_months,tick_value
+HSI,Hang Seng Index Future,HK0000001H35,HKD,XHKF,commodity_future,50 x HSI,"H,M,U,Z",50
+HHI,HSCEI Future,HK0000002H34,HKD,XHKF,commodity_future,50 x HSCEI,"H,M,U,Z",50
+MHI,Mini Hang Seng Index Future,HK0000003H33,HKD,XHKF,commodity_future,10 x HSI,"H,M,U,Z",10
+CNH,CNH Futures,HK0000004H32,CNH,XHKF,commodity_future,100000 CNH,"H,M,U,Z",10
+GLD,Gold Futures,HK0000005H31,HKD,XHKF,commodity_future,100 troy oz,"G,J,M,Q,V,Z",10

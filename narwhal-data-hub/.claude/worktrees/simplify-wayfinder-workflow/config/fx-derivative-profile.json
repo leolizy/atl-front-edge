@@ -1,0 +1,56 @@
+{
+  "profile_name": "fx-derivative-v1",
+  "asset_class": "fx_derivative",
+  "cdm_version": "5.0.0",
+  "required_fields": [
+    {
+      "cdm_path": "product.instrument.identifiers[]",
+      "source": "isin",
+      "scheme": "ISIN"
+    },
+    { "cdm_path": "product.instrument.name", "source": "instrument_name" },
+    { "cdm_path": "product.instrument.currency", "source": "currency" },
+    { "cdm_path": "product.instrument.type", "value": "ForeignExchangeOption" },
+    { "cdm_path": "product.instrument.mic", "source": "mic" },
+    { "cdm_path": "product.instrument.venue_symbol", "source": "venue_symbol" },
+    {
+      "cdm_path": "product.instrument.economicTerms.putCall",
+      "source": "put_call"
+    },
+    {
+      "cdm_path": "product.instrument.economicTerms.strikeRate",
+      "source": "strike_rate",
+      "type": "number"
+    },
+    {
+      "cdm_path": "product.instrument.economicTerms.expirationDate",
+      "source": "expiry_date"
+    },
+    {
+      "cdm_path": "product.instrument.economicTerms.notionalAmount1.amount",
+      "source": "notional_amount_1",
+      "type": "number"
+    },
+    {
+      "cdm_path": "product.instrument.economicTerms.notionalAmount1.currency",
+      "source": "notional_currency_1"
+    },
+    {
+      "cdm_path": "product.instrument.economicTerms.notionalAmount2.amount",
+      "source": "notional_amount_2",
+      "type": "number"
+    },
+    {
+      "cdm_path": "product.instrument.economicTerms.notionalAmount2.currency",
+      "source": "notional_currency_2"
+    },
+    {
+      "cdm_path": "product.instrument.economicTerms.settlementType",
+      "source": "settlement_type"
+    },
+    {
+      "cdm_path": "product.instrument.economicTerms.optionStyle",
+      "source": "option_style"
+    }
+  ]
+}

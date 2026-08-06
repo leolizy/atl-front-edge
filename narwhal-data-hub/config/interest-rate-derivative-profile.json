@@ -1,0 +1,43 @@
+{
+  "profile_name": "interest-rate-derivative-v1",
+  "asset_class": "interest_rate_derivative",
+  "cdm_version": "5.0.0",
+  "required_fields": [
+    {
+      "cdm_path": "product.instrument.identifiers[]",
+      "source": "isin",
+      "scheme": "ISIN"
+    },
+    { "cdm_path": "product.instrument.name", "source": "instrument_name" },
+    { "cdm_path": "product.instrument.currency", "source": "currency" },
+    { "cdm_path": "product.instrument.type", "value": "InterestRateSwap" },
+    { "cdm_path": "product.instrument.mic", "source": "mic" },
+    { "cdm_path": "product.instrument.venue_symbol", "source": "venue_symbol" },
+    {
+      "cdm_path": "product.instrument.economicTerms.notionalSchedule",
+      "source": "notional_schedule",
+      "type": "object"
+    },
+    {
+      "cdm_path": "product.instrument.economicTerms.notionalSchedule.notionalCurrency",
+      "source": "notional_currency"
+    },
+    {
+      "cdm_path": "product.instrument.economicTerms.interestRatePayout.rateSpecification.fixedRate",
+      "source": "fixed_rate",
+      "type": "number"
+    },
+    {
+      "cdm_path": "product.instrument.economicTerms.interestRatePayout.rateSpecification.floatingRate.referenceRate",
+      "source": "floating_rate_reference"
+    },
+    {
+      "cdm_path": "product.instrument.economicTerms.effectiveDate.adjustableDate.unadjustedDate",
+      "source": "effective_date"
+    },
+    {
+      "cdm_path": "product.instrument.economicTerms.terminationDate.adjustableDate.unadjustedDate",
+      "source": "termination_date"
+    }
+  ]
+}

@@ -1,0 +1,6 @@
+symbol,name,isin,currency,mic,asset_class,contract_size,delivery_months,tick_value
+ES,E-Mini S&P 500 Future,US25875P1066,USD,XCME,commodity_future,50xS&P 500 Index,"H,M,U,Z",12.50
+CL,Crude Oil Future,US12573R1095,USD,XCME,commodity_future,1000 barrels,"F,G,H,J,K,M,N,Q,U,V,X,Z",10.00
+GC,Gold Future,US65000C1053,USD,XCME,commodity_future,100 troy ounces,"G,J,M,Q,V,Z",10.00
+ZC,Corn Future,US12573P1093,USD,XCME,commodity_future,5000 bushels,"H,K,N,U,Z",0.25
+6E,Euro FX Future,US13494R1032,USD,XCME,commodity_future,125000 EUR,"H,M,U,Z",0.00005

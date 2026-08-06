@@ -1,0 +1,39 @@
+[
+  {
+    "_profile": "cash-v1",
+    "mic": "cash-v1",
+    "venue_symbol": "FIXED-DEPOSIT-USD-1M",
+    "asset_class": "cash",
+    "currency": "USD",
+    "instrument_name": "USD Fixed Deposit 1Y",
+    "deposit_amount": "10000000",
+    "maturity_date": "2027-06-15",
+    "fixed_rate": "4.5",
+    "deposit_type": "TERM"
+  },
+  {
+    "_profile": "loan-v1",
+    "mic": "loan-v1",
+    "venue_symbol": "CORP-LOAN-FAC-500M",
+    "asset_class": "loan",
+    "currency": "USD",
+    "instrument_name": "Corporate Loan Facility",
+    "notional_amount": "500000000",
+    "maturity_date": "2029-03-01",
+    "interest_rate": "5.75",
+    "borrower_type": "CORPORATE",
+    "facility_type": "TERM_LOAN"
+  },
+  {
+    "_profile": "digital-asset-v1",
+    "mic": "digital-asset-v1",
+    "venue_symbol": "BTC",
+    "asset_class": "digital_asset",
+    "currency": "USD",
+    "instrument_name": "Bitcoin",
+    "ticker": "BTC",
+    "blockchain": "BITCOIN",
+    "decimal_places": "8",
+    "asset_type": "CRYPTOCURRENCY"
+  }
+]

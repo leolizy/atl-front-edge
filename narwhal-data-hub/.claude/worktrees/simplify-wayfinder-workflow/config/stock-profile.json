@@ -1,0 +1,34 @@
+{
+  "profile_name": "stock-v1",
+  "asset_class": "stock",
+  "cdm_version": "5.0.0",
+  "required_fields": [
+    {
+      "cdm_path": "instrument.identifiers[]",
+      "source": "isin",
+      "scheme": "ISIN"
+    },
+    {
+      "cdm_path": "instrument.identifiers[]",
+      "source": "figi",
+      "scheme": "FIGI"
+    },
+    {
+      "cdm_path": "instrument.identifiers[]",
+      "source": "cusip",
+      "scheme": "CUSIP"
+    },
+    {
+      "cdm_path": "instrument.identifiers[]",
+      "source": "sedol",
+      "scheme": "SEDOL"
+    },
+
+    { "cdm_path": "instrument.name", "source": "instrument_name" },
+    { "cdm_path": "instrument.currency", "source": "currency" },
+    { "cdm_path": "instrument.type", "value": "Equity" },
+
+    { "cdm_path": "instrument.listing.mic", "source": "mic" },
+    { "cdm_path": "instrument.listing.venue_symbol", "source": "venue_symbol" }
+  ]
+}

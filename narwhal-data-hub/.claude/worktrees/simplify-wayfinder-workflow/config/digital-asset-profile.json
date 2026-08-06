@@ -1,0 +1,17 @@
+{
+  "profile_name": "digital-asset-v1",
+  "asset_class": "digital_asset",
+  "cdm_version": "5.0.0",
+  "required_fields": [
+    { "cdm_path": "product.type", "value": "DigitalAsset" },
+    { "cdm_path": "product.name", "source": "instrument_name" },
+    { "cdm_path": "product.currency", "source": "currency" },
+    { "cdm_path": "product.digitalAsset.ticker", "source": "ticker" },
+    { "cdm_path": "product.digitalAsset.blockchain", "source": "blockchain" },
+    {
+      "cdm_path": "product.digitalAsset.decimalPlaces",
+      "source": "decimal_places"
+    },
+    { "cdm_path": "product.digitalAsset.assetType", "source": "asset_type" }
+  ]
+}

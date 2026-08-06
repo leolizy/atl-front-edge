@@ -1,0 +1,51 @@
+{
+  "profile_name": "credit-derivative-v1",
+  "asset_class": "credit_derivative",
+  "cdm_version": "5.0.0",
+  "required_fields": [
+    {
+      "cdm_path": "product.instrument.identifiers[]",
+      "source": "isin",
+      "scheme": "ISIN"
+    },
+    { "cdm_path": "product.instrument.name", "source": "instrument_name" },
+    { "cdm_path": "product.instrument.currency", "source": "currency" },
+    { "cdm_path": "product.instrument.type", "value": "CreditDefaultSwap" },
+    { "cdm_path": "product.instrument.mic", "source": "mic" },
+    { "cdm_path": "product.instrument.venue_symbol", "source": "venue_symbol" },
+    {
+      "cdm_path": "product.instrument.economicTerms.referenceEntity",
+      "source": "reference_entity"
+    },
+    {
+      "cdm_path": "product.instrument.economicTerms.referenceEntityType",
+      "source": "reference_entity_type"
+    },
+    {
+      "cdm_path": "product.instrument.economicTerms.cdsSpread",
+      "source": "cds_spread",
+      "type": "number"
+    },
+    {
+      "cdm_path": "product.instrument.economicTerms.notionalSchedule.notionalAmount",
+      "source": "notional_amount",
+      "type": "number"
+    },
+    {
+      "cdm_path": "product.instrument.economicTerms.notionalSchedule.notionalCurrency",
+      "source": "notional_currency"
+    },
+    {
+      "cdm_path": "product.instrument.economicTerms.terminationDate.adjustableDate.unadjustedDate",
+      "source": "maturity_date"
+    },
+    {
+      "cdm_path": "product.instrument.economicTerms.deliveryType",
+      "source": "delivery_type"
+    },
+    {
+      "cdm_path": "product.instrument.economicTerms.payoutTrigger",
+      "source": "payout_trigger"
+    }
+  ]
+}

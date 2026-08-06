@@ -1,0 +1,6 @@
+symbol,name,isin,currency,mic,asset_class,contract_size,delivery_months,tick_value
+NK,Nikkei 225 Index Future,SG0000001X45,JPY,XSIM,commodity_future,500 x Nikkei 225,"H,M,U,Z",2500
+TW,Taiwan Index Future,SG0000002X44,USD,XSIM,commodity_future,40 x TAIEX,"H,M,U,Z",10
+SIN,INR/USD Future,SG0000003X43,USD,XSIM,commodity_future,1000000 INR,"H,M,U,Z",5
+FEF,Iron Ore 62% Fe Future,SG0000004X42,USD,XSIM,commodity_future,500 DMT,"F,G,H,J,K,M,N,Q,U,V,X,Z",5
+RT,SICOM RSS3 Rubber Future,SG0000005X41,USD,XSIM,commodity_future,5000 kg,"F,G,H,J,K,M,N,Q,U,V,X,Z",5

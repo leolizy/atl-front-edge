@@ -1,0 +1,69 @@
+{
+  "records": [
+    {
+      "isin": "EZ1234567890",
+      "asset_class": "interest_rate_derivative",
+      "instrument_name": "EUR Fixed-Float IRS 5Y",
+      "currency": "EUR",
+      "product_terms": {
+        "notional_schedule": "{\"notionalAmount\":10000000,\"notionalCurrency\":\"EUR\"}",
+        "fixed_rate": "2.50",
+        "floating_rate_reference": "EUR-EURIBOR-6M",
+        "floating_rate_term": "6M",
+        "effective_date": "2026-08-01",
+        "termination_date": "2031-08-01",
+        "payment_frequency": "SEMI_ANNUAL",
+        "delivery_type": "CASH"
+      }
+    },
+    {
+      "isin": "US12345CDS01",
+      "asset_class": "credit_derivative",
+      "instrument_name": "ACME Corp CDS 5Y",
+      "currency": "USD",
+      "product_terms": {
+        "reference_entity": "ACME Corp",
+        "reference_entity_type": "CORPORATE",
+        "cds_spread": "100",
+        "notional_amount": "10000000",
+        "notional_currency": "USD",
+        "maturity_date": "2031-06-20",
+        "delivery_type": "AUCTION",
+        "payout_trigger": "CREDIT_DEFAULT"
+      }
+    },
+    {
+      "isin": "GB98765432101",
+      "asset_class": "fx_derivative",
+      "instrument_name": "EUR/USD Vanilla Call Option",
+      "currency": "EUR",
+      "product_terms": {
+        "put_call": "CALL",
+        "strike_rate": "1.1500",
+        "expiry_date": "2026-09-15",
+        "notional_amount_1": "10000000",
+        "notional_currency_1": "EUR",
+        "notional_amount_2": "11500000",
+        "notional_currency_2": "USD",
+        "settlement_type": "PHYSICAL",
+        "option_style": "EUROPEAN"
+      }
+    },
+    {
+      "isin": "FR55555EQT01",
+      "asset_class": "equity_derivative",
+      "instrument_name": "Total SA Equity Swap 3Y",
+      "currency": "EUR",
+      "product_terms": {
+        "underlier_isin": "FR0000120271",
+        "underlier_name": "TotalEnergies SE",
+        "notional_amount": "5000000",
+        "notional_currency": "EUR",
+        "strike_price": "60.00",
+        "expiry_date": "2029-08-01",
+        "return_type": "TOTAL_RETURN",
+        "payment_frequency": "QUARTERLY"
+      }
+    }
+  ]
+}

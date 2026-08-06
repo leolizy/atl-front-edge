@@ -1,0 +1,27 @@
+{
+  "profile_name": "cash-v1",
+  "asset_class": "cash",
+  "cdm_version": "5.0.0",
+  "required_fields": [
+    { "cdm_path": "product.type", "value": "Cash" },
+    { "cdm_path": "product.name", "source": "instrument_name" },
+    { "cdm_path": "product.currency", "source": "currency" },
+    {
+      "cdm_path": "product.cash.fixedDeposit.amount",
+      "source": "deposit_amount"
+    },
+    { "cdm_path": "product.cash.fixedDeposit.currency", "source": "currency" },
+    {
+      "cdm_path": "product.cash.fixedDeposit.maturityDate",
+      "source": "maturity_date"
+    },
+    {
+      "cdm_path": "product.cash.fixedDeposit.fixedRate",
+      "source": "fixed_rate"
+    },
+    {
+      "cdm_path": "product.cash.fixedDeposit.depositType",
+      "source": "deposit_type"
+    }
+  ]
+}

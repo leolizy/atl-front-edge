@@ -1,0 +1,40 @@
+{
+  "profile_name": "debt-v1",
+  "asset_class": "debt",
+  "cdm_version": "5.0.0",
+  "required_fields": [
+    {
+      "cdm_path": "instrument.identifiers[]",
+      "source": "isin",
+      "scheme": "ISIN"
+    },
+
+    { "cdm_path": "instrument.name", "source": "instrument_name" },
+    { "cdm_path": "instrument.currency", "source": "currency" },
+    { "cdm_path": "instrument.type", "value": "Bond" },
+
+    { "cdm_path": "instrument.listing.mic", "source": "mic" },
+    { "cdm_path": "instrument.listing.venue_symbol", "source": "venue_symbol" },
+
+    {
+      "cdm_path": "instrument.attributes.coupon_rate",
+      "source": "coupon_rate"
+    },
+    {
+      "cdm_path": "instrument.attributes.maturity_date",
+      "source": "maturity_date"
+    },
+    {
+      "cdm_path": "instrument.attributes.issue_date",
+      "source": "issue_date"
+    },
+    {
+      "cdm_path": "instrument.attributes.face_value",
+      "source": "face_value"
+    },
+    {
+      "cdm_path": "instrument.attributes.bond_type",
+      "source": "bond_type"
+    }
+  ]
+}

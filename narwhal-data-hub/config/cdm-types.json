@@ -1,0 +1,55 @@
+{
+  "cdm_version": "5.0.0",
+  "types": [
+    {
+      "name": "Product",
+      "definition": "The root type in the FINOS Common Domain Model (CDM). Represents any financial product with a globally unique identifier. Products include terms, identifiers, and market data for lifecycle events, risk analytics, and regulatory reporting.",
+      "see_also": ["Instrument", "Security", "Identifier"]
+    },
+    {
+      "name": "Instrument",
+      "definition": "A financial instrument is a tradeable asset of any kind. In CDM, Instrument is a subtype of Product that has a specific name, identifiers, and listing information on an exchange or venue.",
+      "see_also": ["Product", "Security", "Equity"]
+    },
+    {
+      "name": "Equity",
+      "definition": "An equity instrument represents ownership in a corporation. In CDM, an Equity is a subtype of Instrument with equity-specific attributes such as shares outstanding, voting rights, and dividend terms.",
+      "see_also": ["Instrument", "Security"]
+    },
+    {
+      "name": "Security",
+      "definition": "A security is a fungible, negotiable financial instrument representing a financial value. In CDM, Security subtypes include Equity, Bond, and Derivative — each carrying specific terms and identifiers.",
+      "see_also": ["Instrument", "Equity", "Product"]
+    },
+    {
+      "name": "Identifier",
+      "definition": "An identifier pairs a scheme type (e.g. ISIN, FIGI, CUSIP, SEDOL) with a value to uniquely identify a financial instrument. Multiple identifiers may be attached to a single Instrument.",
+      "see_also": ["Instrument", "Currency"]
+    },
+    {
+      "name": "Currency",
+      "definition": "An ISO 4217 three-letter currency code (e.g. USD, EUR, GBP) that denotes the currency in which an instrument is denominated and traded.",
+      "see_also": ["Price", "Instrument"]
+    },
+    {
+      "name": "Price",
+      "definition": "A monetary value representing the market price of an instrument at a point in time. In CDM, Price includes the amount, currency, and price type (e.g. bid, ask, last).",
+      "see_also": ["Currency", "Instrument"]
+    },
+    {
+      "name": "Quantity",
+      "definition": "A numeric measure representing an amount of a financial instrument, such as trade quantity, position size, or contract multiplier. In CDM, Quantity pairs a value with a unit of measure.",
+      "see_also": ["Instrument", "Price"]
+    },
+    {
+      "name": "Date",
+      "definition": "A temporal reference in the CDM, used for trade date, settlement date, effective date, and maturity date. Dates follow ISO 8601 format (YYYY-MM-DD).",
+      "see_also": ["Product", "Instrument"]
+    },
+    {
+      "name": "Exchange",
+      "definition": "An organized market or trading venue where financial instruments are listed and traded. In CDM, each Exchange is identified by its Market Identifier Code (MIC).",
+      "see_also": ["Instrument", "Listing", "Currency"]
+    }
+  ]
+}
