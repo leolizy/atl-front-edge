@@ -1,5 +1,5 @@
 {
-  "name": "narwhal-data-hub",
+  "name": "mcp-data-hub",
   "version": "1.0.0",
   "description": "Local MCP server: bitemporal, FINOS CDM-structured product data pool",
   "type": "module",
